@@ -776,6 +776,7 @@ header.header .user_nav {
   position: relative;
   height: 100px;
   right: 0;
+  display: contents;
 }
 
 header.header .user_nav span {
