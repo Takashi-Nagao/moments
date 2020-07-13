@@ -19,6 +19,7 @@
   <span class="name">
     <a href="/users/<%= tweet.user.id %>">
       <span>投稿者</span><%= tweet.user.nickname %>
+      <%= render 'likes/like_links', tweet: tweet %>
     </a>
   </span>
 </div>
