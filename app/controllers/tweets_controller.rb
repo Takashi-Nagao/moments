@@ -11,7 +11,7 @@ class TweetsController < ApplicationController
   end
 
   def create
-    Tweet.create(tweet_params)
+    @tweet = Tweet.create(tweet_params)
   end
 
   def destroy
@@ -47,5 +47,10 @@ class TweetsController < ApplicationController
 
   def move_to_index
     redirect_to action: :index unless user_signed_in?
+  end
+
+
+  def post_params
+    params.require(:tweet).permit(:image, :text)
   end
 end
