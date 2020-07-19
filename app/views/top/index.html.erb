@@ -1,5 +1,31 @@
+
 <header>
-  <%= image_tag "13214.jpg", class: "top-image" %>
+  <div class="swiper-container">
+  <div class="swiper-wrapper">
+    <%= image_tag "13214.jpg", class: "swiper-slide" %>
+    <%= image_tag "111.jpg", class: "swiper-slide" %>
+    <%= image_tag "333.jpg", class: "swiper-slide" %>
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+<script>
+  var mySwiper = new Swiper ('.swiper-container', {
+  loop: true,
+  freeMode: true,
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  loop: true,
+  autoplay: {
+      delay: 2000,
+      disableOnInteraction: false,
+    },
+  });
+</script>
+
 </header>
 <div class="top-container">
   <div class= "left-body">
