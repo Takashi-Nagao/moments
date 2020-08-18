@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: moments_production
-  username: moments
-  password: <%= ENV['MOMENTS_DATABASE_PASSWORD'] %>
+  username: root            #rootに変更
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
