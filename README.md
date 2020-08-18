@@ -1,24 +1,51 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Moments DB設計
 
-Things you may want to cover:
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|nickname|string|null: false, unique: true|
+|email|string|null: false, unique: true|
+|password|string|null: false, unique: true|
 
-* Ruby version
+### Association
+- has_many :tweets, dependent: :destroy
+- has_many :comments
+- has_many :likes, dependent: :destroy
+- has_many :like_tweets, through: :likes, source: :tweet
 
-* System dependencies
 
-* Configuration
+## tweetsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|text|string||
+|image|text||
+|user_id|integer|null: false, foreign_key: true|
 
-* Database creation
+### Association
+- belongs_to :user
+- has_many :comments
+- has_many :likes, dependent: :destroy
+- has_many :liking_users, through: :likes, source: :user
 
-* Database initialization
+## commentsテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user_id|integer|null: false|
+|tweet_id|tweet_id|null: false|
+|text|text|null: false|
 
-* How to run the test suite
+### Association
+- belongs_to :user
+- belongs_to :tweet
 
-* Services (job queues, cache servers, search engines, etc.)
+## likesテーブル
+|Column|Type|Options|
+|------|----|-------|
+|user|integer|null: false, foreign_key: true|
+|tweet|integer|null: false, foreign_key: true|
 
-* Deployment instructions
-
-* ...
+### Association  presence: true
+- belongs_to :user
+- belongs_to :tweet
