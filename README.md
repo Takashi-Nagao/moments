@@ -19,9 +19,9 @@
 ## tweetsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|text|string|presence: true|
+|text|string||
 |image|text||
-|user_id|integer||
+|user_id|integer|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
@@ -32,9 +32,9 @@
 ## commentsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer||
-|tweet_id|tweet_id||
-|text|text||
+|user_id|integer|null: false|
+|tweet_id|tweet_id|null: false|
+|text|text|null: false|
 
 ### Association
 - belongs_to :user
