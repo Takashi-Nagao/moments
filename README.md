@@ -43,8 +43,8 @@
 ## likesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|user|integer|null: false|
-|tweet|integer|null: false|
+|user|integer|null: false, foreign_key: true|
+|tweet|integer|null: false, foreign_key: true|
 
 ### Association  presence: true
 - belongs_to :user
