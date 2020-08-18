@@ -1,10 +1,15 @@
-# config valid for current version and patch releases of Capistrano
-lock "~> 3.14.1"
-set :application, "moments"
-set :repo_url, "git@github.com:Takashi-Nagao/moments.git"
+lock '3.14.1'
+
+# 自身のアプリ名、ユーザー名、リポジトリ名を記述
+set :application, 'moments'
+set :repo_url,  'git@github.com:Takashi-Nagao/moments.git'
+
 set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
+
 set :rbenv_type, :user
 set :rbenv_ruby, '2.6.5'
+
+# chat-spaceで使ったpemを指定
 set :ssh_options, auth_methods: ['publickey'],
                   keys: ['~/.ssh/chatspace.pem']
 
