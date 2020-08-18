@@ -3,7 +3,7 @@ lock "~> 3.14.1"
 set :application, "moments"
 set :repo_url, "git@github.com:Takashi-Nagao
 /moments.git"
-set :linked_dirs, fetch(:linked_dirs, []).push(‘log', ‘tmp/pids', 'tmp/cache', ‘tmp/sockets', ‘vendor/bundle', ‘public/system', ‘public/uploads')
+set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', 'public/system', 'public/uploads')
 set :rbenv_type, :user
 set :rbenv_ruby, '2.6.5'
 set :ssh_options, auth_methods: ['publickey'],
