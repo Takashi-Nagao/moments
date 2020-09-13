@@ -49,3 +49,7 @@
 ### Association  presence: true
 - belongs_to :user
 - belongs_to :tweet
+
+
+アプリURL
+https://54.168.45.251
