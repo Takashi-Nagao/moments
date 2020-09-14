@@ -11,7 +11,7 @@
 投稿一覧ページ  
 ![](https://i.gyazo.com/e79c9c18546e131a0c13f4e41a197fac.jpg)  
 
-
+投稿ページ  
 ![](https://i.gyazo.com/908f776418fd17f80d6f7731b3f78802.png)
 
 
