@@ -5,9 +5,14 @@
 # アプリ名
 　　　『　Moments　』　　
 
-![](https://i.gyazo.com/b2bb810f4bd957367545a9623f084d2e.jpg)
-![](https://i.gyazo.com/e79c9c18546e131a0c13f4e41a197fac.jpg)
+トップページ
+![](https://i.gyazo.com/b2bb810f4bd957367545a9623f084d2e.jpg)  
 
+投稿一覧ページ  
+![](https://i.gyazo.com/e79c9c18546e131a0c13f4e41a197fac.jpg)  
+
+
+![](https://i.gyazo.com/908f776418fd17f80d6f7731b3f78802.png)
 
 
 
