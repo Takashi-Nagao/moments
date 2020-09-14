@@ -12,7 +12,7 @@
 http://54.168.45.251
 
 テストアカウント
-address:  test@test
+address:  test@test/n
 password: testuser
 
 ・実装機能
